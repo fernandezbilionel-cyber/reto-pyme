@@ -1,9 +1,7 @@
-// pantalla de error
 function recuperar() {
   document.getElementById("error").style.display = "none";
 }
 
-// modo oscuro / claro
 function cambiarModo() {
   document.body.classList.toggle("claro");
   var boton = document.getElementById("btnModo");
@@ -14,7 +12,6 @@ function cambiarModo() {
   }
 }
 
-// chatbot
 function abrirChat() {
   document.getElementById("chat").style.display = "flex";
 }
@@ -30,13 +27,11 @@ function enviarChat() {
 
   var mensajes = document.getElementById("mensajes");
 
-  // mensaje del usuario
   var user = document.createElement("p");
   user.className = "user";
   user.textContent = texto;
   mensajes.appendChild(user);
 
-  // respuesta del bot
   var respuesta = responder(texto);
   var bot = document.createElement("p");
   bot.className = "bot";
@@ -58,7 +53,6 @@ function responder(texto) {
   return "No entiendo. Preguntame por cafe, precios, envios, historia o contacto.";
 }
 
-// cotizacion
 function calcular() {
   var nombre = document.getElementById("nombreCliente").value;
   var precio = parseFloat(document.getElementById("producto").value);
@@ -67,7 +61,6 @@ function calcular() {
   document.getElementById("total").textContent = nombre + ", tu total es: RD$" + total;
 }
 
-// formulario de contacto
 function enviarFormulario() {
   var nombre = document.getElementById("nombre").value;
   if (nombre === "") {
@@ -77,7 +70,6 @@ function enviarFormulario() {
   document.getElementById("respuesta").textContent = "Mensaje enviado. Gracias " + nombre + "!";
 }
 
-// easter egg - escribir FENIX
 var palabra = "";
 document.addEventListener("keydown", function(e) {
   palabra = palabra + e.key.toUpperCase();
