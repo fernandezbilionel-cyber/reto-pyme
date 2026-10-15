@@ -24,4 +24,4 @@ Una pagina web de una pyme dominicana (Tostaduria El Fenix RD) que fue borrada d
 - Mapa de ubicacion
 
 ## Autor
-Nombre del estudiante
+Bilionel F.
