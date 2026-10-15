@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>El Fenix RD - Servicios</title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<header>
+  <h1 class="logo">El Fenix RD</h1>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="servicios.html">Servicios</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+  <button id="btnModo" onclick="cambiarModo()">Modo Oscuro</button>
+</header>
+
+<main>
+  <section class="inicio">
+    <h2 class="titulo">SERVICIOS REINVENTADOS</h2>
+    <p>Mas fuertes y mas seguros que antes</p>
+  </section>
+
+  <section class="servicios">
+    <div class="caja">
+      <h3>Cafe Artesanal</h3>
+      <p>Granos 100% dominicanos de Jarabacoa y Valdesia.</p>
+    </div>
+    <div class="caja">
+      <h3>Suscripcion Segura</h3>
+      <p>Recibe tu cafe cada mes con pago protegido.</p>
+    </div>
+    <div class="caja">
+      <h3>Delivery</h3>
+      <p>Entregas con seguimiento en tiempo real en Santo Domingo.</p>
+    </div>
+    <div class="caja">
+      <h3>Catas Virtuales</h3>
+      <p>Aprende sobre cafe desde tu casa con nuestros baristas.</p>
+    </div>
+    <div class="caja">
+      <h3>Compra Sostenible</h3>
+      <p>Cada compra financia un arbol nuevo en el campo dominicano.</p>
+    </div>
+    <div class="caja">
+      <h3>Asistente 24/7</h3>
+      <p>Nuestro chatbot te ayuda a cualquier hora.</p>
+    </div>
+  </section>
+
+  <section class="cotizar">
+    <h2>Cotiza tu pedido</h2>
+    <input type="text" id="nombreCliente" placeholder="Tu nombre">
+    <select id="producto">
+      <option value="500">Libra de cafe - RD$500</option>
+      <option value="900">Suscripcion mensual - RD$900</option>
+      <option value="250">Cata virtual - RD$250</option>
+    </select>
+    <input type="number" id="cantidad" value="1" min="1">
+    <button onclick="calcular()">Calcular Total</button>
+    <p id="total"></p>
+  </section>
+</main>
+
+<!-- chatbot -->
+<div id="chat">
+  <div class="chat-cabeza">
+    <span>FenixBot</span>
+    <button onclick="cerrarChat()">X</button>
+  </div>
+  <div id="mensajes">
+    <p class="bot">Hola, quieres info sobre algun servicio?</p>
+  </div>
+  <div class="chat-abajo">
+    <input type="text" id="textoChat" placeholder="Escribe aqui...">
+    <button onclick="enviarChat()">Enviar</button>
+  </div>
+</div>
+<button id="abrirChat" onclick="abrirChat()">Chat</button>
+
+<footer>
+  <p>El Fenix RD - 2025 - Renacidos del borrado digital</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

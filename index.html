@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>El Fenix RD - Inicio</title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<!-- pantalla de error -->
+<div id="error">
+  <h1>ERROR 404</h1>
+  <p>La pagina ha sido borrada</p>
+  <button onclick="recuperar()">Recuperar Sistema</button>
+</div>
+
+<header>
+  <h1 class="logo">El Fenix RD</h1>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="servicios.html">Servicios</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+  <button id="btnModo" onclick="cambiarModo()">Modo Oscuro</button>
+</header>
+
+<main>
+  <section class="inicio">
+    <h2 class="titulo">RESURGIMOS DEL BORRADO</h2>
+    <p>De la nada, renace el mejor cafe dominicano</p>
+    <button onclick="mostrarSecreto()">Descubre el secreto</button>
+  </section>
+
+  <section class="historia">
+    <h2>La Historia del Misterio</h2>
+    <div class="evento">
+      <h3>Dia 0</h3>
+      <p>Un dia nuestra pagina web desaparecio. Redes sociales, correos, todo. Como si nunca hubieramos existido.</p>
+    </div>
+    <div class="evento">
+      <h3>Dia 1</h3>
+      <p>Encontramos un USB en la oficina con un mensaje: "Tu negocio ha sido borrado. Reinventalo".</p>
+    </div>
+    <div class="evento">
+      <h3>Dia 2</h3>
+      <p>Decidimos no rendirnos. Vamos a reconstruir El Fenix desde cero, mas fuerte que antes.</p>
+    </div>
+    <div class="evento">
+      <h3>Hoy</h3>
+      <p>El Fenix RD renace con nueva imagen, nuevas funciones y mas seguridad. Bienvenido.</p>
+    </div>
+  </section>
+
+  <section class="final">
+    <h2>Eres parte de la resurreccion</h2>
+    <p>Cada taza de cafe ayuda a reconstruir el sueno de una pyme dominicana.</p>
+    <a href="servicios.html">Ver Servicios</a>
+  </section>
+</main>
+
+<!-- chatbot -->
+<div id="chat">
+  <div class="chat-cabeza">
+    <span>FenixBot</span>
+    <button onclick="cerrarChat()">X</button>
+  </div>
+  <div id="mensajes">
+    <p class="bot">Hola, soy FenixBot. En que te puedo ayudar?</p>
+  </div>
+  <div class="chat-abajo">
+    <input type="text" id="textoChat" placeholder="Escribe aqui...">
+    <button onclick="enviarChat()">Enviar</button>
+  </div>
+</div>
+<button id="abrirChat" onclick="abrirChat()">Chat</button>
+
+<footer>
+  <p>El Fenix RD - 2025 - Renacidos del borrado digital</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

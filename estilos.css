@@ -1,0 +1,356 @@
+/* estilos basicos */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0a0a1a;
+  color: #eee;
+  margin: 0;
+  padding: 0;
+}
+
+body.claro {
+  background-color: #f4f4ff;
+  color: #222;
+}
+
+/* pantalla de error */
+#error {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  color: red;
+  text-align: center;
+  padding-top: 200px;
+  z-index: 999;
+}
+
+#error h1 {
+  font-size: 60px;
+}
+
+#error button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background-color: transparent;
+  color: red;
+  border: 2px solid red;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* header */
+header {
+  background-color: #14142b;
+  padding: 15px 20px;
+  border-bottom: 2px solid #00ffcc;
+}
+
+body.claro header {
+  background-color: white;
+}
+
+.logo {
+  color: #00ffcc;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav {
+  display: inline-block;
+}
+
+nav a {
+  color: #eee;
+  text-decoration: none;
+  margin-right: 15px;
+  font-weight: bold;
+}
+
+body.claro nav a {
+  color: #222;
+}
+
+nav a:hover {
+  color: #ff00aa;
+}
+
+#btnModo {
+  float: right;
+  background: none;
+  border: 1px solid #00ffcc;
+  color: #00ffcc;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+/* secciones */
+.inicio {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.titulo {
+  color: #ff00aa;
+  font-size: 40px;
+  text-shadow: 2px 2px 5px #ff00aa;
+}
+
+.inicio button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background-color: transparent;
+  color: #00ffcc;
+  border: 2px solid #00ffcc;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.inicio button:hover {
+  background-color: #00ffcc;
+  color: black;
+}
+
+/* historia */
+.historia {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.historia h2 {
+  color: #00ffcc;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.evento {
+  background-color: #14142b;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-left: 4px solid #ff00aa;
+}
+
+body.claro .evento {
+  background-color: white;
+}
+
+.evento h3 {
+  color: #ffcc00;
+  margin-top: 0;
+}
+
+/* final */
+.final {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.final a {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 25px;
+  background-color: #ff00aa;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* servicios */
+.servicios, .pruebas {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.caja {
+  background-color: #14142b;
+  padding: 20px;
+  width: 280px;
+  border: 1px solid #00ffcc;
+  text-align: center;
+}
+
+body.claro .caja {
+  background-color: white;
+}
+
+.caja h3 {
+  color: #00ffcc;
+  margin-top: 0;
+}
+
+.caja:hover {
+  transform: scale(1.03);
+  transition: 0.3s;
+  box-shadow: 0 0 15px #ff00aa;
+}
+
+/* formularios */
+.cotizar, .formulario {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.cotizar h2, .formulario h2, .pruebas h2, .mapa h2 {
+  color: #ff00aa;
+  text-align: center;
+}
+
+input, select, textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #14142b;
+  border: 1px solid #00ffcc;
+  color: #eee;
+}
+
+body.claro input, body.claro select, body.claro textarea {
+  background-color: white;
+  color: #222;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #00ffcc;
+  color: black;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #ff00aa;
+  color: white;
+}
+
+#total, #respuesta {
+  color: #ffcc00;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+/* mapa */
+.mapa {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+/* chatbot */
+#abrirChat {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 15px 20px;
+  background-color: #ff00aa;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#chat {
+  display: none;
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  width: 300px;
+  height: 400px;
+  background-color: #14142b;
+  border: 2px solid #00ffcc;
+  flex-direction: column;
+}
+
+body.claro #chat {
+  background-color: white;
+}
+
+.chat-cabeza {
+  background-color: #ff00aa;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.chat-cabeza button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#mensajes {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.bot {
+  background-color: #00ffcc;
+  color: black;
+  padding: 8px;
+  border-radius: 8px;
+  margin: 5px 0;
+}
+
+.user {
+  background-color: #ff00aa;
+  color: white;
+  padding: 8px;
+  border-radius: 8px;
+  margin: 5px 0;
+  text-align: right;
+}
+
+.chat-abajo {
+  display: flex;
+  border-top: 1px solid #00ffcc;
+}
+
+.chat-abajo input {
+  flex: 1;
+  border: none;
+  margin: 0;
+}
+
+.chat-abajo button {
+  margin: 0;
+}
+
+/* footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #00ffcc;
+  margin-top: 40px;
+}
+
+/* responsivo */
+@media (max-width: 600px) {
+  .logo, nav, #btnModo {
+    display: block;
+    text-align: center;
+    margin: 5px auto;
+  }
+  .titulo {
+    font-size: 28px;
+  }
+  #chat {
+    width: 90%;
+    right: 5%;
+  }
+}

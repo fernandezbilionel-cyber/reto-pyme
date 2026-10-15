@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>El Fenix RD - Contacto</title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<header>
+  <h1 class="logo">El Fenix RD</h1>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="servicios.html">Servicios</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+  <button id="btnModo" onclick="cambiarModo()">Modo Oscuro</button>
+</header>
+
+<main>
+  <section class="inicio">
+    <h2 class="titulo">PRUEBAS DEL INCIDENTE</h2>
+    <p>Aqui estan las pruebas de lo que paso</p>
+  </section>
+
+  <section class="pruebas">
+    <h2>Evidencias</h2>
+    <div class="caja">
+      <h3>Archivo USB</h3>
+      <p>Contenido cifrado que encontramos en la oficina.</p>
+    </div>
+    <div class="caja">
+      <h3>Captura del Borrado</h3>
+      <p>Registro del momento en que vaciaron los servidores.</p>
+    </div>
+    <div class="caja">
+      <h3>Correo Anonimo</h3>
+      <p>Mensaje recibido antes del ataque desde un servidor desconocido.</p>
+    </div>
+  </section>
+
+  <section class="formulario">
+    <h2>Escribenos</h2>
+    <input type="text" id="nombre" placeholder="Tu nombre">
+    <input type="email" id="correo" placeholder="Tu correo">
+    <textarea id="mensaje" rows="5" placeholder="Tu mensaje"></textarea>
+    <button onclick="enviarFormulario()">Enviar Mensaje</button>
+    <p id="respuesta"></p>
+  </section>
+
+  <section class="mapa">
+    <h2>Encuentranos</h2>
+    <iframe src="https://www.google.com/maps?q=Santo+Domingo&output=embed" width="100%" height="300"></iframe>
+  </section>
+</main>
+
+<!-- chatbot -->
+<div id="chat">
+  <div class="chat-cabeza">
+    <span>FenixBot</span>
+    <button onclick="cerrarChat()">X</button>
+  </div>
+  <div id="mensajes">
+    <p class="bot">Hola, en que te puedo ayudar?</p>
+  </div>
+  <div class="chat-abajo">
+    <input type="text" id="textoChat" placeholder="Escribe aqui...">
+    <button onclick="enviarChat()">Enviar</button>
+  </div>
+</div>
+<button id="abrirChat" onclick="abrirChat()">Chat</button>
+
+<footer>
+  <p>El Fenix RD - 2025 - Renacidos del borrado digital</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
